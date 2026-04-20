@@ -9,8 +9,8 @@
   --navy-2: #0f1a2e;
   --navy-3: #162341;
   --white: #ffffff;
-  --grey: #9aa7bd;
-  --grey-dim: #5b6980;
+  --grey: #c6d1e3;
+  --grey-dim: #8592ab;
   --border: rgba(2, 179, 233, 0.25);
 }
 
@@ -86,18 +86,21 @@ h1, h2, h3 {
 .nav-cta {
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--white);
-  padding: 10px 20px;
-  border: 1px solid var(--border);
+  background: var(--btn-blue);
+  padding: 12px 26px;
+  border: 1px solid var(--btn-blue);
   border-radius: 999px;
   transition: all 0.2s;
+  box-shadow: 0 0 20px var(--btn-blue-glow);
 }
 .nav-cta:hover {
-  border-color: var(--blue);
-  box-shadow: 0 0 16px var(--blue-glow);
+  background: var(--btn-blue-hover);
+  border-color: var(--btn-blue-hover);
+  box-shadow: 0 0 28px var(--btn-blue-glow);
   opacity: 1;
 }
 
@@ -168,10 +171,10 @@ h1, h2, h3 {
   display: inline-block;
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  padding: 14px 28px;
+  padding: 18px 36px;
   border-radius: 999px;
   border: 1px solid var(--btn-blue);
   cursor: pointer;
@@ -190,8 +193,8 @@ h1, h2, h3 {
   opacity: 1;
 }
 .btn.big {
-  padding: 18px 40px;
-  font-size: 15px;
+  padding: 20px 44px;
+  font-size: 17px;
 }
 
 /* About */
