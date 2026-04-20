@@ -2,6 +2,9 @@
   --blue: #02B3E9;
   --blue-glow: rgba(2, 179, 233, 0.45);
   --blue-soft: rgba(2, 179, 233, 0.12);
+  --btn-blue: #0064F8;
+  --btn-blue-hover: #0052d8;
+  --btn-blue-glow: rgba(0, 100, 248, 0.55);
   --navy: #0a1220;
   --navy-2: #0f1a2e;
   --navy-3: #162341;
@@ -170,19 +173,20 @@ h1, h2, h3 {
   letter-spacing: 0.08em;
   padding: 14px 28px;
   border-radius: 999px;
-  border: 1px solid var(--blue);
+  border: 1px solid var(--btn-blue);
   cursor: pointer;
   transition: all 0.2s;
 }
 .btn.primary {
-  background: var(--navy-2);
+  background: var(--btn-blue);
   color: var(--white);
-  box-shadow: 0 0 20px var(--blue-glow);
+  box-shadow: 0 0 24px var(--btn-blue-glow);
 }
 .btn.primary:hover {
-  background: var(--blue);
-  color: var(--navy);
-  box-shadow: 0 0 32px var(--blue-glow);
+  background: var(--btn-blue-hover);
+  border-color: var(--btn-blue-hover);
+  color: var(--white);
+  box-shadow: 0 0 36px var(--btn-blue-glow);
   opacity: 1;
 }
 .btn.big {
